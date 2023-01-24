@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link';
+import Header from './Header';
 const name = 'Long Tran';
 export const siteTitle = 'Next.js Sample Website';
 export default function Layout({ children, home }) {
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
             <header className={styles.header}>
                 {home ? (
                     <>
+                        <Header/>
                         <Image
                             priority
                             src="/images/profile.jpeg"
@@ -34,7 +36,8 @@ export default function Layout({ children, home }) {
                             width={144}
                             alt=""
                         />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
+
                     </>
                 ) : (
                     <>
