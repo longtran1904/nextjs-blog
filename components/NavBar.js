@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import ContactBar from "./ContactBar";
 
+//TODO fix round circle for contact buttons
 
 const authorName = "Long Tran";
 export default function NavBar(){
@@ -8,7 +11,7 @@ export default function NavBar(){
         <div className="w-60 h-screen shadow-md bg-white px-1">
             {/* Name and Avatar */}
             
-            <div className="py-4 h-auto flex flex-col items-center">
+            <div className="relative py-4 h-auto flex flex-col items-center">
                 <h1>
                     {authorName}
                 </h1>
@@ -16,10 +19,10 @@ export default function NavBar(){
                     className="rounded-full my-3 mx-1"
                     src='/images/profile.jpeg' 
                     width={140} height={140}
+                    alt="Avatar"
                 />
-                {/* <div className="py-2 flex items-center justify-center h-12">
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" style={{ fontSize: 100, color: "blue" }} />
-                </div> */}
+                <p className="py-2 flex text-sm text-center items-center justify-center h-auto">Hi, my name is Long Tran and I'm a full stack developer/product builder. Welcome to my personal website!</p> 
+                <ContactBar/>
             </div>
             <hr className="my-2"/>
             {/* Menu */}
