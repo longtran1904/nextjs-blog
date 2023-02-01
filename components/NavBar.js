@@ -8,7 +8,7 @@ import ContactBar from "./ContactBar";
 const authorName = "Long Tran";
 export default function NavBar(){
     return (
-        <div className="w-60 h-screen shadow-md bg-white px-1">
+        <div className="w-60 min-h-screen shadow-md bg-white px-1">
             {/* Name and Avatar */}
             
             <div className="relative py-4 h-auto flex flex-col items-center">
