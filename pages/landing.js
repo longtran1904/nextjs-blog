@@ -37,22 +37,6 @@ export default function LandingPage({allPostsData, taglines}) {
                     </ul>
                     <ContactBar/>
                 </section>
-
-                {/* Display blog posts */}
-                <section>
-                    <h2>Blog</h2>
-                    <ul>
-                    {allPostsData.map(({ id, date, title }) => (
-                        <li key={id}>
-                        <Link href={`/posts/${id}`}>{title}</Link>
-                        <br />
-                        <small >
-                            <Date dateString={date} />
-                        </small>
-                        </li>
-                    ))}
-                    </ul>
-                </section>
         </div>
       </div>
     )
