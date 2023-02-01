@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import HomeData from '../content/home.json'
 
-import LandingPage from './LandingPage';
+import LandingPage from './landing';
 
 export async function getStaticProps(){
   const allPostsData = getSortedPostsData();
@@ -17,12 +17,12 @@ export async function getStaticProps(){
 
 export default function Home( {allPostsData, taglines} ) {
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <LandingPage allPostsData={allPostsData} taglines={taglines}/>
-    </Layout>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import ContactBar from '../components/ContactBar';
 import Date from '../components/date';
 
 export default function LandingPage({allPostsData, taglines}) {
@@ -34,6 +35,7 @@ export default function LandingPage({allPostsData, taglines}) {
                             </li>
                         ))}
                     </ul>
+                    <ContactBar/>
                 </section>
 
                 {/* Display blog posts */}

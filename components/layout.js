@@ -14,18 +14,12 @@ export default function Layout({ children, home }) {
                     name='description' 
                     content='Learn how to build a personal website using Next.js'
                 />
-                <meta
-                    property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle,
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
                 <meta name='og:title' content={siteTitle}/>
                 <meta name='twitter:card' content='summary_large_image'/>
                 <meta name="theme-color" content="#3a785b" />
                 <style type="text/css">{dom.css()}</style>
             </Head>
-            <div className="relative min-h-screen flex flex-row bg-green-100">
+            <div className="relative min-h-screen flex flex-col bg-green-100">
                 <NavBar />
                 <div className='relative flex-1'>
                     <main>{children}</main>
