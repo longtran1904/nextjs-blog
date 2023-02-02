@@ -16,20 +16,19 @@ export default function Layout({ children, home }) {
                 />
                 <meta name='og:title' content={siteTitle}/>
                 <meta name='twitter:card' content='summary_large_image'/>
-                <meta name="theme-color" content="#3a785b" />
                 <style type="text/css">{dom.css()}</style>
             </Head>
-            <div className="relative min-h-screen flex flex-col bg-green-100">
+            <main className="relative min-h-screen flex flex-col bg-green-100">
                 <NavBar />
-                <div className='relative flex-1'>
-                    <main>{children}</main>
+                <div className='flex flex-col grow'>
+                    {children}
                     {!home && (
                         <div> 
                             <Link href="/">← Back to home</Link>
                         </div>
                     )}
                 </div>
-            </div>
+            </main>
         </div>
         
 
