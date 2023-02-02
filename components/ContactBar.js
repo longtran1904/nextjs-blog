@@ -1,7 +1,7 @@
 import ContactBarButtons from "../content/ContactBarButton.config";
 import ContactBarButton from "./ContactBarButton";
 const ContactBar = () => (
-    <div className="flex items-center justify-center">
+    <div className="flex py-5 items-center justify-center">
         {ContactBarButtons.map((buttonInfo) => (
             <ContactBarButton
                 key={buttonInfo.website}

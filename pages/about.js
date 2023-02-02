@@ -3,7 +3,7 @@ import Image from "next/image";
 const authorName = "Long Tran";
 export default function About({buttons}) {
     return (
-        <div>
+        <div className="">
             {/* Name and Avatar */}    
             <div className="relative py-4 h-auto flex flex-col items-center">
                 <h1>
