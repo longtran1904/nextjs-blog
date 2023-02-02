@@ -5,7 +5,8 @@ import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
 import HomeData from '../content/home.json'
 import Head from 'next/head'
-import { siteTitle } from '../components/Layout';
+
+const siteTitle = "Long Tran"
 
 export default function Home({ allPostsData, taglines }) {
   return (
