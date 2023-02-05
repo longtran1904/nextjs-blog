@@ -51,12 +51,12 @@ export default function Home({ allPostsData, taglines }) {
           <section>
               <h2>Blog</h2>
               <ul>
-              {allPostsData.map(({ id, date, title }) => (
-                  <li key={id}>
-                  <Link href={`/posts/${id}`}>{title}</Link>
+              {allPostsData.map((post) => (
+                  <li key={post.id}>
+                  <Link href={`/posts/${post.id}`}>{post.details.title}</Link>
                   <br />
                   <small >
-                      <Date dateString={date} />
+                      <Date dateString={post.details.date} />
                   </small>
                   </li>
               ))}
@@ -68,10 +68,11 @@ export default function Home({ allPostsData, taglines }) {
 }
 
 export async function getStaticProps(){
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsData("/posts");
+  console.log(allPostsData);
   return{
     props: {
-      allPostsData,
+      allPostsData: allPostsData,
       taglines: HomeData.taglines,
     },
   }
