@@ -1,8 +1,6 @@
 
 import Link from 'next/link';
 import ContactBar from '../components/ContactBar';
-import Date from '../components/date';
-import { getSortedPostsData } from '../lib/posts';
 import HomeData from '../content/home.json'
 import Head from 'next/head'
 
@@ -47,32 +45,14 @@ export default function Home({ allPostsData, taglines }) {
 
           <ContactBar/>
 
-          {/* Display blog posts */}
-          <section>
-              <h2>Blog</h2>
-              <ul>
-              {allPostsData.map((post) => (
-                  <li key={post.id}>
-                  <Link href={`/posts/${post.id}`}>{post.details.title}</Link>
-                  <br />
-                  <small >
-                      <Date dateString={post.details.date} />
-                  </small>
-                  </li>
-              ))}
-              </ul>
-          </section> 
       </div>
     </>
   )
 }
 
 export async function getStaticProps(){
-  const allPostsData = getSortedPostsData("/posts");
-  console.log(allPostsData);
   return{
     props: {
-      allPostsData: allPostsData,
       taglines: HomeData.taglines,
     },
   }
