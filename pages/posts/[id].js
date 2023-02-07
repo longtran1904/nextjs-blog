@@ -5,14 +5,14 @@ import Date from '../../components/date';
 
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllPostIds('/content/posts');
   return {
     paths,
     fallback: false,
   };
 }
 export async function getStaticProps({params}){
-    const postData = await getPostData(params.id);
+    const postData = await getPostData(params.id, '/content/posts');
     return {
         props:{
             postData,
@@ -21,17 +21,17 @@ export async function getStaticProps({params}){
 }
 export default function Post({ postData }) {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{postData.title}</title>
             </Head>  
-            <article>
+            <article className='items-center py-4 px-48'>
                 <h1>{postData.title}</h1>
                 <div>
                 <Date dateString={postData.date} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <div className='items-center mt-8' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
-        </Layout>
+        </>
       );
 }
