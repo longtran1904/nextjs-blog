@@ -6,7 +6,7 @@ import Head from 'next/head'
 
 const siteTitle = "Long Tran"
 
-export default function Home({ allPostsData, taglines }) {
+export default function Home({ allPostsData, taglines, darkMode }) {
   return (
     <>
       <Head>
@@ -14,16 +14,17 @@ export default function Home({ allPostsData, taglines }) {
       </Head>
       <div className='flex flex-col grow justify-center text-center'>
           <section>
-              <h1 className="text-center leading-tight sm:leading-relaxed text-5xl sm:text-6xl font-semibold md:font-bold">
+              <h1 className="text-center leading-tight sm:leading-relaxed text-5xl sm:text-6xl font-semibold md:font-bold dark:text-slate-50">
                   Hey! I&rsquo;m <br className="sm:hidden" />
                   <Link href="/about">
-                      <span className="text-green-800 ease-in-out duration-300 hover:[text-shadow:-2px_2px_black] hover:cursor-pointer">
+                      <span className="text-green-800 ease-in-out duration-300 hover:[text-shadow:-2px_2px_black] hover:cursor-pointer
+                        dark:text-orange-400 dark:hover:[text-shadow:-2px_2px_white]">
                       Long Tran
                       </span>
                   </Link>
                   , a...
               </h1>
-              <ul className="flex flex-col items-center">
+              <ul className="flex flex-col items-center dark:text-slate-50">
                   {taglines.map((tagline) => (
                       <li
                       key={tagline.position}
@@ -43,7 +44,7 @@ export default function Home({ allPostsData, taglines }) {
               </ul>
           </section>
 
-          <ContactBar/>
+          <ContactBar darkMode={darkMode}/>
 
       </div>
     </>

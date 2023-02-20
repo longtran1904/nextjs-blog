@@ -1,38 +1,45 @@
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai"
 import { Popover, Transition } from '@headlessui/react'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsSunFill} from 'react-icons/bs'
 
-export default function NavBar({darkModeToggle}){
+export default function NavBar({darkModeToggle, darkMode}){
     return (
-        <div className="h-20 w-full shadow-md bg-white z-10">
+        <div className="h-20 w-full shadow-md bg-white z-10 dark:bg-gray-700">
             <Popover className="h-full">
                 {({open, close}) => (
                     <>
                     {/* Desktop Menu */}
                     <div className="h-full flex justify-between items-center">
-                        <h1 className="font-burtons text-gray-800 px-8 2xl:px-16 md:px-12 sm:px-10 ">hello world</h1>
+                        <h1 className="font-burtons text-gray-800 px-8 2xl:px-16 md:px-12 sm:px-10 dark:text-slate-50">hello world</h1>
                         <div className="flex flex-row items-center gap-4">
-                            <BsFillMoonStarsFill className="cursor-pointer text-2xl text-gray-700" 
-                                    onClick={darkModeToggle}/>
+                            {darkMode ? 
+                                <BsSunFill className="cursor-pointer text-2xl text-gray-700
+                                     dark:text-gray-50" onClick={darkModeToggle}/>
+                                : <BsFillMoonStarsFill className="cursor-pointer text-2xl text-gray-700
+                                            dark:text-gray-50" onClick={darkModeToggle}/>}
                             <ul className="hidden md:flex">
                                 <Link href='/'>
-                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out 
+                                            dark:text-gray-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                         <span>Home</span>
                                     </li>
                                 </Link>
                                 <Link href='/about'>
-                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out
+                                            dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                         <span>About Me</span>
                                     </li>
                                 </Link>
                                 <Link href='/projects'>
-                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out
+                                            dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                         <span>Projects</span>
                                     </li>
                                 </Link>
                                 <Link href='/blog'>
-                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+                                    <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out
+                                            dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                         <span>Blog</span>
                                     </li>
                                 </Link>

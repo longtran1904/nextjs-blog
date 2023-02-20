@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-export default function ContactBarButton({website, url, icon}){
+export default function ContactBarButton({website, url, icon_light, icon_dark, darkMode}){
     return(
-        <div className='text-5xl text-gray-600'>
+        <div className='text-5xl dark:text-slate-50'>
             <Link href={url}>
-                {icon}
+                {darkMode ? icon_dark : icon_light}
             </Link>
         </div>
     )
