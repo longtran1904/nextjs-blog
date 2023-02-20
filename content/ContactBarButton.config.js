@@ -1,17 +1,21 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 
 
 const ContactBarButtons = [
     {
         website: 'GitHub',
         url: 'https://github.com/longtran1904',
-        icon: <FontAwesomeIcon icon={faGithub} size="lg" />
+        icon: <AiFillGithub />
     },
     {
         website: 'LinkedIn',
         url: 'https://www.linkedin.com/in/long-tran123/',
-        icon: <FontAwesomeIcon icon={faLinkedinIn} size="lg"/>
+        icon: <AiFillLinkedin/>
+    },
+    {
+        website: 'twitter',
+        url: 'https://www.linkedin.com/in/long-tran123/',
+        icon: <AiFillTwitterCircle/>
     }
 ];
 export default ContactBarButtons;

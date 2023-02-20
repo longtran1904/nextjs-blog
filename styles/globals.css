@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    h1,h2,h3,h4,h5,h6 {
-        @apply font-bold
-    }
+@font-face {
+    font-family: "burtons";
+    src: url('../public/Burtons.otf');
+}
 
+@layer base{
     h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl
+        @apply text-xl sm:text-2xl md:text-3xl
     }
     h2{
         @apply text-3xl sm:text-4xl

@@ -9,6 +9,9 @@ module.exports = {
     darkMode: 'class',
     theme: {
       extend: {
+        fontFamily: {
+            burtons: 'burtons',
+        },
         colors: {
           'accent-1': '#FAFAFA',
           'accent-2': '#EAEAEA',
