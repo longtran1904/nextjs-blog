@@ -18,7 +18,7 @@ export default function Layout({ children, home, darkModeToggle, darkMode }) {
                 <meta name='twitter:card' content='summary_large_image'/>
                 <style type="text/css">{dom.css()}</style>
             </Head>
-            <main className="relative min-h-screen flex flex-col dark:bg-gray-900">
+            <main className="relative w-screen min-h-screen flex flex-col dark:bg-gray-900">
                 <NavBar darkModeToggle={darkModeToggle} darkMode={darkMode}/>
                 <div className='flex flex-col grow'>
                     {children}

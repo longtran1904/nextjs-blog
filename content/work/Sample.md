@@ -6,7 +6,7 @@ blur-rgb: 224,20,60
 start-date: Nov 2020
 end-date: Jan 2021
 repo-url: https://github.com/longtran1904/TANK_GAME_JAVA_LXA
-technologies: Java, Java Swing
+technologies: [Java, Java Swing]
 ---
 
 ## Summary

@@ -1,6 +1,4 @@
-import Image from "next/image"
 import Card from "../components/Card"
-import ProjectsContent from "../content/projects.json"
 import { getSortedPostsData } from "../lib/posts"
 export default function Projects({projects, work}){
     return(

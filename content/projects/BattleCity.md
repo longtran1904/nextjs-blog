@@ -1,12 +1,12 @@
 ---
 title: Battle City
-short-description: Explore a fun tank game in your free time!
+short-description: Explore a fun tank game in your free time And looking for max width size, is this a max size, I'm writing a super very super very very long sentence, Oh it's not the max of screen size :) !
 thumbnail: https://raw.githubusercontent.com/samuel-ping/chat_stat/main/screenshots/chat_stat-header-color-cropped.png
 blur-rgb: 224,20,60
 start-date: Nov 2020
 end-date: Jan 2021
 repo-url: https://github.com/longtran1904/TANK_GAME_JAVA_LXA
-technologies: Java, Java Swing
+technologies: [Java, Java Swing, OOP]
 ---
 
 ## Summary

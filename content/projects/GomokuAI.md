@@ -6,7 +6,7 @@ blur-rgb: 224,20,60
 start-date: June 2020
 end-date: June 2020
 repo-url: https://github.com/longtran1904/GomokuBot
-technologies: C++
+technologies: [C++, OOP, Min-Max Algorithm, Heuristics]
 ---
 ## Summary
 

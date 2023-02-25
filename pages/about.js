@@ -1,7 +1,9 @@
 import Image from "next/image";
 
+
+// PAGE OBSOLETED
 const authorName = "long tran";
-export default function About({buttons}) {
+export default function About() {
     return (
         <div className="">
             {/* Name and Avatar */}    

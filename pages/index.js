@@ -1,19 +1,23 @@
 
 import Link from 'next/link';
 import ContactBar from '../components/ContactBar';
+import About from '../components/About'
+import Projects from '../components/Projects';
 import HomeData from '../content/home.json'
 import Head from 'next/head'
+import { getSortedPostsData } from '../lib/posts';
+
 
 const siteTitle = "Long Tran"
 
-export default function Home({ allPostsData, taglines, darkMode }) {
+export default function Home({ allPostsData, taglines, projects, work, darkMode }) {
   return (
     <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className='flex flex-col grow justify-center text-center'>
-          <section>
+      <div className='flex flex-col h-screen  text-center'>
+          <section className="m-auto overflow-hidden">
               <h1 className="text-center leading-tight sm:leading-relaxed text-5xl sm:text-6xl font-semibold md:font-bold dark:text-slate-50">
                   Hey! I&rsquo;m <br className="sm:hidden" />
                   <Link href="/about">
@@ -42,19 +46,23 @@ export default function Home({ allPostsData, taglines, darkMode }) {
                       </li>
                   ))}
               </ul>
-          </section>
-
-          <ContactBar darkMode={darkMode}/>
-
+              <ContactBar darkMode={darkMode}/>
+          </section>          
       </div>
+      <About />
+      <Projects projects={projects} work={work}/>
     </>
   )
 }
 
 export async function getStaticProps(){
-  return{
-    props: {
-      taglines: HomeData.taglines,
-    },
-  }
+    const projects = getSortedPostsData('/content/projects')
+    const work = getSortedPostsData('/content/work')
+    return {
+      props: {
+        taglines: HomeData.taglines,
+        projects,
+        work,
+      },
+    }
 }
