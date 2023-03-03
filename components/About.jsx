@@ -1,25 +1,8 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
 
 const authorName = "long tran";
 export default function About() {
 
-    // Handle responsive size of Image
-    const [windowSize, setWindowSize] = useState([
-        window.innerWidth,
-        window.innerHeight,
-      ]);
-    useEffect(() => {
-        const handleWindowResize = () => {
-          setWindowSize([window.innerWidth, window.innerHeight]);
-        };
-    
-        window.addEventListener('resize', handleWindowResize);
-    
-        return () => {
-          window.removeEventListener('resize', handleWindowResize);
-        };
-      });
     return (
         <div className="">
             {/* Name and Avatar */}    
@@ -28,8 +11,8 @@ export default function About() {
                     <Image  
                         className="text-6xl rounded-full md:rounded-md object-fit"
                         src='/images/profile.jpg' 
-                        width={windowSize[0] >= 768 ? 300 : 200} 
-                        height={windowSize[1] >= 768 ? 300 : 200}
+                        width={300} 
+                        height={300}
                         alt="No Image Loaded"
                         priority
                     />
