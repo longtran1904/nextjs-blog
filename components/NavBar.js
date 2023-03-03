@@ -26,7 +26,7 @@ export default function NavBar({darkModeToggle, darkMode}){
                                     <span>Home</span>
                                 </li>
                             </Link>
-                            <Link href='/about'>
+                            {/* <Link href='/about'>
                                 <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out
                                         dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                     <span>About Me</span>
@@ -37,7 +37,7 @@ export default function NavBar({darkModeToggle, darkMode}){
                                         dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">
                                     <span>Projects</span>
                                 </li>
-                            </Link>
+                            </Link> */}
                             <Link href='/blog'>
                                 <li className="flex items-center text-sm py-4 px-4 mx-2 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out
                                         dark:text-slate-50" data-mdb-ripple="true" data-mdb-ripple-color="dark">

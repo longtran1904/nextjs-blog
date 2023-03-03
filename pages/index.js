@@ -26,7 +26,6 @@ export default function Home({ allPostsData, taglines, projects, work, darkMode 
                       Long Tran
                       </span>
                   </Link>
-                  , a...
               </h1>
               <ul className="flex flex-col items-center dark:text-slate-50">
                   {taglines.map((tagline) => (

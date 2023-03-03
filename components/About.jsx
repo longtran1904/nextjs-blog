@@ -1,25 +1,44 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 const authorName = "long tran";
 export default function About() {
+
+    // Handle responsive size of Image
+    const [windowSize, setWindowSize] = useState([
+        window.innerWidth,
+        window.innerHeight,
+      ]);
+    useEffect(() => {
+        const handleWindowResize = () => {
+          setWindowSize([window.innerWidth, window.innerHeight]);
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      });
     return (
-        <div>
+        <div className="">
             {/* Name and Avatar */}    
-            <div className="flex flex-row w-screen relative h-auto md:h-screen items-center gap-12">
-                <div className="flex justify-center basis-1/3 h-full">
+            <div className="flex flex-col md:flex-row w-screen relative h-auto px-24 items-center gap-12">
+                <div className="flex justify-center text-center md:basis-1/3 h-full">
                     <Image  
-                        className="text-6xl rounded-full object-contain"
+                        className="text-6xl rounded-full md:rounded-md object-fit"
                         src='/images/profile.jpg' 
-                        width={450} height={450}
+                        width={windowSize[0] >= 768 ? 300 : 200} 
+                        height={windowSize[1] >= 768 ? 300 : 200}
                         alt="No Image Loaded"
                         priority
                     />
                 </div>
-                <div className=" basis-2/3 flex flex-col gap-4 py-2 mr-24 text-md items-center h-auto text-gray-800 md:leading-8">
+                <div className=" md:basis-2/3 flex flex-col gap-4 py-2 text-md items-center min-h-full text-gray-800 md:leading-8">
                     <h2 className="text-3xl font-burtons dark:text-orange-400">
                         {authorName}
                     </h2>
-                    <article className="max-h-full overflow-hidden dark:text-slate-50">
+                    <article className="h-auto dark:text-slate-50 flex flex-col gap-3">
                         <p>
                             <span role="img">👋</span>Hi, I'm Long. I'm a senior at Rutgers University - New Brunswick
                             I'm pursuing a BS degree in Computer Science with an expected graduation in December 2023. 
@@ -29,9 +48,15 @@ export default function About() {
                         <p>
                             <span role="img">🌊</span>I appreciate every challenge I
                             came across that helped cultivate my self-efficacy in
-                            this risk-taking world. In my Computer Science program,
-                            I enjoyed my CS and Math courses most, which problem-solving oriented
-                            and they all aim to deliver sharp results. While learning those courses, 
+                            this risk-taking world. Being a computer science student who is 
+                            enthusiastic about tackling real-world issues, I used to come up with 
+                            numerous software concepts to enhance people's lives in various domains. 
+                            Nevertheless, my friends and I were unsuccessful in transforming 
+                            those ideas into significant products. As a result, I now have 
+                            a strong urge to expand my knowledge on software development.
+                        </p>   
+                        <p>
+                            <span role="img">🌿</span>
                             I learned the importance of staying open-mind to look at many different 
                             aspects of a problem. Whether those problems are adapting new technology 
                             or framework to our product, implementing complex algorithms and solve company's 
@@ -39,9 +64,9 @@ export default function About() {
                             flexibility of our mind and our will to trial and error. I feel highly motivated as 
                             I discover new tools and ideas to improve our solutions and bring results 
                             that beyond satisfiable to people whom using my products.
-
-                        </p>
-                        <p>
+                        </p>                         
+                        
+                        {/* <p>
                             <span role="img">🌿</span>I love to organize my room on
                             a regular basis. Such habit transfers to my every aspect
                             of life. I always try to start the day with a
@@ -50,7 +75,7 @@ export default function About() {
                             productivity. Rather than following rigid approaches, I
                             prefer to strive to expand my comfort zone and adopt
                             unconventional methods to build sustainable solutions.
-                        </p>
+                        </p> */}
                         <p>
                             <span role="img">🌤</span>What compels me to wake up for
                             work and become fully charged for the day is knowing I
