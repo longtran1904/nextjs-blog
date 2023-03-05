@@ -5,10 +5,10 @@ import Date from '../components/date';
 export default function blog({allPostsData}) {
     return (
         <>
-        <div className='flex flex-col grow justify-center text-center'>
+        <div className='flex flex-col grow justify-center text-center dark:text-slate-50'>
             {/* Display blog posts */}
             <section>
-                <h2>Blog</h2>
+                <h2 className="dark:text-orange-500">My Blog</h2>
                 <ul>
                 {allPostsData.map((post) => (
                     <li key={post.id}>

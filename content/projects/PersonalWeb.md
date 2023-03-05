@@ -18,5 +18,5 @@ However, this current version of my website is not the end. I intend to maintain
 
 ### Future Implementations Plan:
 
-Sliding Image Track Effect:
-Source: https://www.youtube.com/watch?v=PkADl0HubMY&ab_channel=Hyperplexed
+1. Sliding Image Track Effect:
+   - Source: https://www.youtube.com/watch?v=PkADl0HubMY&ab_channel=Hyperplexed

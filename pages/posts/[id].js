@@ -24,12 +24,12 @@ export default function Post({ postData }) {
             <Head>
                 <title>{postData.title}</title>
             </Head>  
-            <article className='items-center py-4 px-48'>
+            <article className='items-center py-4 px-48 dark:text-slate-50'>
                 <h1>{postData.title}</h1>
                 <div>
                 <Date dateString={postData.date} />
                 </div>
-                <div className='items-center mt-8' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <div className='items-center mt-8 leading-8' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
         </>
       );
