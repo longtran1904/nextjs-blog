@@ -31,7 +31,7 @@ export default function Post({ postData }) {
                 {/* <Date dateString={postData.date} /> */}
                     {postData.date}
                 </div>
-                <div className='items-center mt-8 leadning-8 dark:text-slate-50' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <div className='items-center mt-8 leading-8 dark:text-slate-50' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </article>
         </>
       );

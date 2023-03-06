@@ -9,8 +9,6 @@ repo-url: https://github.com/hcmiu-se-club-2019/digi-curriculum
 technologies: [React, Redux, RESTful API, MySQL]
 ---
 
-## Summary
-
 ### Digi-curriculum - Course Manage Platform
 
 Our IT Department Staffs were in hell each time a new semester starts. They need to arrange new changes of courses by hand in a database of over 100 courses with complex pre-requisite, co-requisite constraints in an Excel sheet.

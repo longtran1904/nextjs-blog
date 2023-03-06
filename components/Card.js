@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Card({param, info}) {
-    console.log("info contains ", info);
+    //console.log("info contains ", info);
     const CardParam = param + '/' + info.id
     return (
         <>

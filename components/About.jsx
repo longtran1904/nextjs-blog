@@ -10,7 +10,7 @@ export default function About() {
                 <div className="flex justify-center text-center md:basis-1/3 h-full">
                     <Image  
                         className="text-6xl rounded-full md:rounded-md object-fit"
-                        src='/images/profile.jpg' 
+                        src='/images/profile_2.jpg' 
                         width={300} 
                         height={300}
                         alt="No Image Loaded"
