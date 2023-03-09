@@ -13,4 +13,5 @@ technologies: [React, MUI, RESTful API, MongoDB, CI/CD]
 
 ### Sledge - Internal judging platform
 
-Project Slegde aims to enhance hackers and judges hackathon experiences. Instead of jotting down notes on papers and having a hard time determining the winner, Sledge provides a web app that judges can rank hack submissions online and we will suggest who will be the winners!
+- Project Slegde aims to enhance hackers and judges hackathon experiences. 
+- Instead of jotting down notes on papers and having a hard time determining the winner, Sledge provides a web app that judges can rank hack submissions online and we will suggest who will be the winners!
