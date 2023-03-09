@@ -1,6 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
+import mdToReact from '../../lib/MdtoReact';
 
 
 export async function getStaticPaths() {
@@ -29,7 +30,7 @@ export default function Post({ postData }) {
                 <div>
                 <Date dateString={postData.date} />
                 </div>
-                <div className='items-center mt-8 leading-8' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <div className='items-center mt-8 leading-6'>{mdToReact(postData.description)}</div>
             </article>
         </>
       );

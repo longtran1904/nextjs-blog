@@ -12,7 +12,9 @@ export default function NavBar({darkModeToggle, darkMode}){
                     {/* Desktop Menu */}
                     <div className="h-full flex justify-between items-center">
                         <div className="flex flex-row items-center gap-2">
-                            <h1 className="font-burtons text-gray-800 px-4 2xl:px-16 md:px-12 sm:px-10 dark:text-slate-50">hello world</h1>
+                            <Link href="/">
+                                <h1 className="font-burtons text-gray-800 px-4 2xl:px-16 md:px-12 sm:px-10 dark:text-slate-50">hello world</h1>
+                            </Link>
                             {darkMode ? 
                                     <BsSunFill className="cursor-pointer text-2xl text-gray-700
                                         dark:text-gray-50" onClick={darkModeToggle}/>
