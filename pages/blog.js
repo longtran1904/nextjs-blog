@@ -1,6 +1,5 @@
 import { getSortedPostsData } from "../lib/posts";
 import Link from 'next/link';
-import Date from '../components/date';
 
 export default function blog({allPostsData}) {
     return (
@@ -15,7 +14,7 @@ export default function blog({allPostsData}) {
                     <Link href={`/posts/${post.id}`}>{post.details.title}</Link>
                     <br />
                     <small >
-                        <Date dateString={post.details.date} />
+                        {post.details['start-date']}
                     </small>
                     </li>
                 ))}
