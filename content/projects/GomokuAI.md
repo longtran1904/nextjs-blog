@@ -8,7 +8,7 @@ end-date: June 2020
 repo-url: https://github.com/longtran1904/GomokuBot
 technologies: [C++, OOP, Min-Max Algorithm, Heuristics]
 ---
-## Summary
+### Summary
 
 Gomoku AI is a 20x20 version of Tic-tac-toe. A player wins when they score 5 moves in a row. It was interesting to implement Min-Max Tree. I made an effort to improve my skills in writing architectural programs in C++ and enhance AI, which included:
 

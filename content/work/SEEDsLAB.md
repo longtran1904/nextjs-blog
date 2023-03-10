@@ -11,10 +11,10 @@ technologies: [React, Redux, RESTful API, MySQL]
 
 ### Digi-curriculum - Course Manage Platform
 
-Our IT Department Staffs were in hell each time a new semester starts. They need to arrange new changes of courses by hand in a database of over 100 courses with complex pre-requisite, co-requisite constraints in an Excel sheet.
+- Our IT Department Staffs were in hell each time a new semester starts. They need to arrange new changes of courses by hand in a database of over 100 courses with complex pre-requisite, co-requisite constraints in an Excel sheet.
 
-Therefore, our professor at SEEDs LAB lauched Digi-curriculum Project, which digitalizes school's course work to website appearance with user-friendly drag-n-drop UI/UX.
+- Therefore, our professor at SEEDs LAB lauched Digi-curriculum Project, which digitalizes school's course work to website appearance with user-friendly drag-n-drop UI/UX.
 
-In this project, I had the opportunity to get touch with the practical software production using Github and weekly Agile meetings and learned a good fundamentals in MERN Stack.
+- In this project, I had the opportunity to get touch with the practical software production using Github and weekly Agile meetings and learned a good fundamentals in MERN Stack.
 
-I revamped the app's CRUD actions with syllabus updating. Enhancing the data flow in the web app was interesting. I first learned the website basic Layered Architecture and applied it to control data communication between web app and server, using Redux and enhancing SQL services.
+- I revamped the app's CRUD actions with syllabus updating. Enhancing the data flow in the web app was interesting. I first learned the website basic Layered Architecture and applied it to control data communication between web app and server, using Redux and enhancing SQL services.

@@ -9,7 +9,7 @@ repo-url:
 technologies: [C#, .NET, RESTful API, MySQL]
 ---
 
-### SiGlaz VN
+### Software Engineer Intern @ SiGlaz VN
 
 - Designed mobile pages using C#, .NET, reduced homepage load time by 25% implementing lazy loading.
 - Delivered inbox notification feature by reorganizing code structure with MVVM architecture.

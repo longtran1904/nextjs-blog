@@ -1,6 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import mdToReact from '../../lib/MdtoReact';
+import remarkGfm from 'remark-gfm';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 
 export async function getStaticPaths() {
@@ -30,7 +31,10 @@ export default function Post({ postData }) {
                 {/* <Date dateString={postData.date} /> */}
                     {postData.date}
                 </div>
-                <div className='items-center mt-4 leading-6'>{mdToReact(postData.description)}</div>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} 
+                    className='prose items-center leading-6'>
+                    {postData.description}
+                </ReactMarkdown>
             </article>
         </>
       );

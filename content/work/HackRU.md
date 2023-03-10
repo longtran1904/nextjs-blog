@@ -9,8 +9,6 @@ repo-url: https://github.com/HackRU/sledge
 technologies: [React, MUI, RESTful API, MongoDB, CI/CD]
 ---
 
-## Summary
-
 ### Sledge - Internal judging platform
 
 - Project Slegde aims to enhance hackers and judges hackathon experiences. 

@@ -8,6 +8,6 @@ end-date: Feb 2023
 repo-url: https://github.com/longtran1904/AStarVisualizer
 technologies: [Python, OOP, Algorithm, Heuristics]
 ---
-# A* Visualizer
+### A* Visualizer
   - This is a coursework in Intro to AI to analyse and compare A* Algorithm with its varariants: Forward A*, Backward A*, Repeated A*, Adaptive A*.
   - The project was built by Long Tran, Fulton Wilcox III, Daniel Taytel.
