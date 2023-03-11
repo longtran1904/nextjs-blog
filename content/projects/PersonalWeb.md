@@ -10,11 +10,11 @@ technologies: [React, Next.js, TailwindCSS, Github Pages]
 ---
 
 ### Summary
-My personal website written with React, JavaScript, and Nextjs to statically generate content pages from Markdown files.
+- My personal website written with React, JavaScript, and Nextjs to statically generate content pages from Markdown files.
 
-After watching a lot of website tutorials, having a website for my own is interesting and satisfying! It turns out that developing a website on my own is not as easy as the tutorials or applying the themes, there are edge cases to solve and it requires creativity to transform official libraries/frameworks documents into actual valuable products.
+- After watching a lot of website tutorials, having a website for my own is interesting and satisfying! It turns out that developing a website on my own is not as easy as the tutorials or applying the themes, there are edge cases to solve and it requires creativity to transform official libraries/frameworks documents into actual valuable products.
 
-However, this current version of my website is not the end. I intend to maintain and improve my website constantly, since I found some interesting sources in designing UI websites.
+- However, this current version of my website is not the end. I intend to maintain and improve my website constantly, since I found some interesting sources in designing UI websites.
 
 ### Future Implementations Plan:
 

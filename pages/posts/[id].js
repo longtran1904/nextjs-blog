@@ -25,7 +25,7 @@ export default function Post({ postData }) {
             <Head>
                 <title>{postData.title}</title>
             </Head>  
-            <article className='items-center py-12 px-48 dark:text-slate-50'>
+            <article className='py-12 px-48 dark:text-slate-50'>
                 <h1>{postData.title}</h1>
                 <ReactMarkdown remarkPlugins={[remarkGfm]}
                     className='prose prose-lg items-center leading-6'>

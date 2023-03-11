@@ -1,22 +1,21 @@
 import { getSortedPostsData } from "../lib/posts";
 import Link from 'next/link';
+import Card from "../components/Card";
+import Head from "next/head";
 
 export default function blog({allPostsData}) {
     return (
         <>
-        <div className='flex flex-col grow justify-center text-center dark:text-slate-50'>
+        <Head>
+            <title>My Blog</title>
+        </Head>
+        <div className='ml-12 mr-12 lg:ml-24 lg:mr-60 py-12 flex flex-col grow dark:text-slate-50'>
             {/* Display blog posts */}
             <section>
-                <h2 className="dark:text-orange-500">My Blog</h2>
+                <h2 className="font-burtons dark:text-orange-500">my blog</h2>
                 <ul>
                 {allPostsData.map((post) => (
-                    <li key={post.id}>
-                    <Link href={`/posts/${post.id}`}>{post.details.title}</Link>
-                    <br />
-                    <small >
-                        {post.details['start-date']}
-                    </small>
-                    </li>
+                    <Card param="posts" info={post}/>
                 ))}
                 </ul>
             </section> 
