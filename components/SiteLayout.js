@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link';
-import { dom } from "@fortawesome/fontawesome-svg-core";
 import NavBar from "./NavBar";
 
 const name = 'Long Tran';
@@ -16,7 +15,6 @@ export default function Layout({ children, home, darkModeToggle, darkMode }) {
                 />
                 <meta name='og:title' content={siteTitle}/>
                 <meta name='twitter:card' content='summary_large_image'/>
-                <style type="text/css">{dom.css()}</style>
             </Head>
             <main className="relative w-screen min-h-screen flex flex-col dark:bg-gray-900">
                 <NavBar darkModeToggle={darkModeToggle} darkMode={darkMode}/>
