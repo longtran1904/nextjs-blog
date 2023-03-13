@@ -9,7 +9,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row w-screen relative h-auto px-24 items-center gap-12">
                 <div className="flex justify-center text-center md:basis-1/3 h-full">
                     <Image  
-                        className="text-6xl rounded-full md:rounded-md object-fit"
+                        className="rounded-full md:rounded-md object-fit"
                         src='/images/profile_2.jpg' 
                         width={300} 
                         height={300}
@@ -18,17 +18,27 @@ export default function About() {
                     />
                 </div>
                 <div className=" md:basis-2/3 flex flex-col gap-4 py-2 text-md items-center min-h-full text-gray-800 md:leading-8">
-                    <h2 className="text-3xl font-burtons dark:text-orange-400">
+                    {/* <h2 className="text-5xl font-burtons dark:text-orange-400">
                         {authorName}
-                    </h2>
-                    <article className="h-auto dark:text-slate-50 flex flex-col gap-3">
+                    </h2> */}
+                    <article className=" text-3xl leading-relaxed h-auto dark:text-slate-50 flex flex-col gap-3">
+                        <p>
+                            <span role="img">👋</span> My Profession: Software Development and Deployment Technologies
+                        </p>
+                        <p> 
+                            <span role="img">🌊</span> My Desire: Turn any technical concept into tangible products that have positive impact on communities
+                        </p>
+                        <p> 
+                            <span role="img">🌤</span> My Motivations: Good Coffees, Good Food, Good Trips!
+                        </p>
+                        {/*
                         <p>
                             <span role="img">👋</span>Hi, I'm Long. I'm a senior at Rutgers University - New Brunswick
                             I'm pursuing a BS degree in Computer Science with an expected graduation in December 2023. 
                             What I'm most passionate about are cultivating technical solutions to real-world problems, 
                             advocating sustainability, and building community-driven applications. 
                         </p>
-                        <p>
+                         <p>
                             <span role="img">🌊</span>I appreciate every challenge I
                             came across that helped cultivate my self-efficacy in
                             this risk-taking world. Being a computer science student who is 
@@ -49,7 +59,7 @@ export default function About() {
                             that beyond satisfiable to people whom using my products.
                         </p>                         
                         
-                        {/* <p>
+                        <p>
                             <span role="img">🌿</span>I love to organize my room on
                             a regular basis. Such habit transfers to my every aspect
                             of life. I always try to start the day with a
@@ -58,7 +68,7 @@ export default function About() {
                             productivity. Rather than following rigid approaches, I
                             prefer to strive to expand my comfort zone and adopt
                             unconventional methods to build sustainable solutions.
-                        </p> */}
+                        </p>
                         <p>
                             <span role="img">🌤</span>What compels me to wake up for
                             work and become fully charged for the day is knowing I
@@ -75,7 +85,7 @@ export default function About() {
                         <p>
                             <span role="img">👾</span>Competencies: OOP Solid Principles in Java/C#
                             full-stack web development, MERN stack, Testing and Deploying Products
-                        </p>    
+                        </p>     */}
                       </article>
                 </div> 
 
